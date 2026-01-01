@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -36,3 +37,4 @@ async def approve(callback: types.CallbackQuery):
     await callback.answer("Доступ открыт")
 
 executor.start_polling(dp)
+
